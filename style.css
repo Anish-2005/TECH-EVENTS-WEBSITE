@@ -1,0 +1,346 @@
+body {
+  font-family: sans-serif;
+  background-image: url(https://images.unsplash.com/photo-1510511233900-1982d92bd835?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dGVjaCUyMGV2ZW50fGVufDB8fDB8fHww);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url(https://img.freepik.com/premium-photo/modern-brick-wall-3d-rendering_118019-218.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1702944000&semt=ais);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 2em;
+}
+
+.logo img {
+  height: 80px;
+}
+.logo img:hover {
+  height: 90px;
+  
+}
+nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+nav a {
+  color: #fff;
+  font-family: serif;
+  font-size: 40px;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #d90222;
+}
+
+.cta {
+  background-color: #ddd;
+  color: #222;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background-color: #ccc;
+}
+
+main {
+  padding: 20px;
+}
+
+.container{
+    position: relative;
+}
+.container .wrapper{
+    width: 60vw;
+  opacity: 0.8;
+    height: 75vh;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    margin: 5rem auto;
+    overflow: hidden;
+}
+.container .wrapper:hover{
+    width: 60vw;
+  opacity: 1.5;
+    height: 75vh;
+    box-shadow: blue;
+    margin: 5rem auto;
+    overflow: hidden;
+}
+.container .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(8, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 60s ease-in-out infinite alternate;
+}
+.container #slider-img-1{
+    background-image: url(https://cdn.dribbble.com/users/2554752/screenshots/5427245/devfest_kolkata_banner.jpg);
+    background-position: center;
+}
+.container #slider-img-2{
+    background-image: url(https://timestech.in/wp-content/uploads/2022/03/Kshitij-2022.jpg);
+    background-position: center;
+}
+.container #slider-img-3{
+    background-image: url(download.jpeg);
+    background-position: center;
+}
+.container #slider-img-4{
+    background-image: url(ju.jpg);
+    background-position: center;
+}
+.container #slider-img-5{
+    background-image: url(https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_1080,q_100,w_1080/v1/gcs/platform-data-dsc/events/LOGO-GSOC_6fZLj2m.png);
+    background-position: center;
+}
+.container #slider-img-6{
+    background-image: url(sbh.png);
+    background-position: center;
+}
+.container #slider-img-7{
+    background-image: url(amity.jpeg);
+    background-position: center;
+}
+.container #slider-img-8{
+    background-image: url(sih.png);
+    background-position: center;
+}
+.container .button-holder .button{
+    background-color: #aba6a6;
+  box-shadow: grey;
+    width: 1px;
+    height: 1px;
+    border-radius: 50px;
+    display: inline-block;
+    margin: .3rem;
+}
+.container .button-holder{
+    position: absolute;
+  left: 37.5%;
+    bottom: -7.5%;
+  
+}
+.button:hover{
+    box-shadow: 0px 0px 7px 4px rgba(0, 255, 255, 0.6);
+}
+@keyframes slider{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
+
+
+.event-cards {
+  display: flex;
+  opacity: 0.7;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.event-cards:hover {
+  display: flex;
+  opacity: 1.5;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.event-card {
+  width: 410px;
+  background-color: #e2e9ee;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.event-card:hover {
+  width: 410px;
+  background-color: #f52424;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.event-card img {
+  width: 100%;
+  opacity: 1.0;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+.event-card h3 {
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.date, .time {
+  display: inline-block;
+  padding: 5px;
+  background-color: #eee;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.contact{
+  color: white;
+}
+.contact .contact-content .column{
+    width: 500px;
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color:  #6fb6e2;
+}.contact .contact-content .row i:hover{
+  font-size: 30px;
+  color: #060656;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color:  #feccb4;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}.contact .right form .textarea textarea:hover{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 21px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area{
+  display: flex;
+  align-items: center;
+}
+.right form .button-area button{
+  color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background:  #12143a;
+  border: 2px solid #967d69;
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover{
+  color: rgb(215, 178, 190);
+  background: none;
+}
+footer{
+    background-image: url(https://img.freepik.com/premium-photo/modern-brick-wall-3d-rendering_118019-218.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1702944000&semt=ais);
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: #848eb8;
+}
+footer span a:hover{
+  color: #cacae2
+  ;
+  
+  }
+
